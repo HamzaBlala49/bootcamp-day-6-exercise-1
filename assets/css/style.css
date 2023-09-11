@@ -1,6 +1,141 @@
-ul{
+/* ul{
     list-style: none;
     display: flex;
     gap: 8px;
 
+} */
+/* init */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(15, 1, 18);
+}
+.center-conatent{
+    background-color: rgb(240, 248, 255);
+    margin: 50px 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 4px #65153099;
+
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    background-color: rgb(201, 144, 255);
+    border-top-left-radius: 10px ;
+    border-top-right-radius: 10px ;
+}
+header > img{
+    widows: 100px;
+    height: 100px;
+}
+
+header > h1{
+    background: linear-gradient(to right,rgb(5, 0, 4),rgb(117, 4, 110),rgb(71, 1, 91));   
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+main {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 400px auto;
+}
+
+main > section{
+    padding: 30px;
+}
+
+main > aside > nav > ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 10px;
+}
+main > aside > nav > ul > li{
+    padding: 10px;
+    border-radius: 4px;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.327);
+
+}
+main > aside > section{
+    padding: 10px;
+}
+main > aside > section > p{
+    font-size: 18px;
+    margin-top: 10px;
+    color: rgb(63, 63, 63);
+}
+
+main > aside > nav > ul > li:hover{
+    background-color:#651551f0;
+    transition: .2s ease;
+
+
+}
+
+main > aside > nav > ul > li:hover a{
+    color:aliceblue;
+    
+
+}
+main > aside > nav > ul > li > a {
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.active{
+    background-color:#651551f0;
+    border-radius: 4px;
+}
+.active > a{    
+    color: aliceblue;
+}
+
+main > section h2{
+    margin: 10px 0;
+}
+main > section > section > p:nth-child(2){
+    margin-top: 10px;
+}
+
+
+footer{
+    background-color: #200024;
+    padding: 10px;
+    text-align: center;
+    border-bottom-left-radius: 10px ;
+    border-bottom-right-radius: 10px ;
+    color:  rgb(240, 248, 255);
+}
+
+.massage{
+    direction: rtl;
+    display: none;
+    color: aliceblue;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: right;
+}
+
+@media (max-width:650px) {
+    .massage{
+        display: block;
+    }
+    .center-conatent{
+        display: none;
+    }
+
+    
 }
